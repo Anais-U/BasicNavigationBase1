@@ -1,9 +1,14 @@
 package com.example.basicnavigation;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -132,5 +137,6 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(Navigation.findNavController(this, R.id.my_nav_host_fragment), appBarConfiguration);
     }
     // TODO END STEP 12
+
 
 }

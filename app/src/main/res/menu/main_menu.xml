@@ -7,4 +7,6 @@
         android:icon="@drawable/ic_shopping_cart_white"
         android:title="@string/shopping_cart"
         app:showAsAction="ifRoom" />
+
+
 </menu>

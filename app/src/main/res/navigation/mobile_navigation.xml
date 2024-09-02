@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@+id/home_dest">
+
     <fragment
         android:id="@+id/home_dest"
         android:name="com.example.basicnavigation.HomeFragment"
@@ -13,20 +14,18 @@
             app:destination="@id/flow_step_one_dest"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
         android:id="@+id/flow_step_one_dest"
-        tools:layout="@layout/flow_step_one_fragment"
-        android:name="com.example.basicnavigation.FlowStepFragment">
-
+        android:name="com.example.basicnavigation.FlowStepFragment"
+        tools:layout="@layout/flow_step_one_fragment">
         <argument
             android:name="flowStepNumber"
             app:argType="integer"
             android:defaultValue="1" />
-
         <action
             android:id="@+id/next_action"
             app:destination="@+id/flow_step_two_dest"
@@ -38,15 +37,12 @@
 
     <fragment
         android:id="@+id/flow_step_two_dest"
-
-        tools:layout="@layout/flow_step_two_fragment"
-        android:name="com.example.basicnavigation.FlowStepFragment">
-
+        android:name="com.example.basicnavigation.FlowStepFragment"
+        tools:layout="@layout/flow_step_two_fragment">
         <argument
             android:name="flowStepNumber"
             app:argType="integer"
             android:defaultValue="2" />
-
         <action
             android:id="@+id/next_action"
             app:popUpTo="@id/home_dest"
@@ -54,13 +50,18 @@
             app:destination="@id/home_dest" />
     </fragment>
 
-    <!-- TODO STEP 1 Create a new navigation destination pointing to SettingsFragment -->
+    <!-- Fragment for Settings -->
     <fragment
         android:id="@+id/settings_dest"
         android:name="com.example.basicnavigation.SettingsFragment"
-        android:label="settings_fragment"
+        android:label="Settings"
         tools:layout="@layout/settings_fragment" />
 
-    <!-- TODO END STEP 1 -->
+    <!-- Fragment for Shopping -->
+    <fragment
+        android:id="@+id/shopping_dest"
+        android:name="com.example.basicnavigation.ShoppingFragment"
+        android:label="Shopping"
+        tools:layout="@layout/shopping_dest" />
 
 </navigation>

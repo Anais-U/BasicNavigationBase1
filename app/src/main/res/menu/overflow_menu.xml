@@ -7,4 +7,9 @@
         android:menuCategory="secondary"
         android:title="@string/settings" />
     <!-- TODO END STEP 8 -->
+
+    <item
+        android:id="@+id/home_dest"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
 </menu>

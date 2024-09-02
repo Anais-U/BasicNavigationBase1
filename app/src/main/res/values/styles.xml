@@ -4,10 +4,10 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#9A63E7</item>
+        <item name="colorPrimaryDark">#38048E</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">#300268</item>
     </style>
 
 </resources>

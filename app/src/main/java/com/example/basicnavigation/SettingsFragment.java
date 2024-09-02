@@ -11,8 +11,13 @@ import androidx.fragment.app.Fragment;
 
 public class SettingsFragment extends Fragment {
 
+    public SettingsFragment() {
+        // Required empty public constructor
+    }
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.settings_fragment, container, false);
     }
 }
